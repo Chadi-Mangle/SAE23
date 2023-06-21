@@ -1,4 +1,4 @@
-fetch('/assets/create_frequencytable.py')
+fetch('../assets/create_frequencytable.py')
   .then(response => response.text())
   .then(text => {
     pre = document.querySelector("pre");
