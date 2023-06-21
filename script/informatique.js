@@ -1,4 +1,4 @@
-fetch('../assets/create_frequencytable.py')
+fetch('/assets/create_frequencytable.py')
   .then(response => response.text())
   .then(text => {
     pre = document.querySelector("pre");
@@ -8,6 +8,21 @@ fetch('../assets/create_frequencytable.py')
     console.error('Erreur lors de la lecture du fichier:', error);
   });
 
+listpre = document.querySelectorAll("pre")
+fetch('python/bataille_navale.py')
+    .then(response => response.text())
+    .then( text => {
+        pre = listpre[0];
+        console.log(text)
+        pre.textContent = text
+    });
+fetch('python/tools2.py')
+  .then(response => response.text())
+  .then( text => {
+      pre = listpre[1];
+      console.log(text)
+      pre.textContent = text
+    });
 function fauxTerm(config) {
   
     var term = config.el;
