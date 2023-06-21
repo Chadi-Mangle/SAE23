@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <iframe id="navbar" src="navbar.html" scrolling="no" style="border:0;" width="100%"></iframe>
+    <div id="navdiv"></div>
+    
+    <div id="sidebar"></div>
+    
+    <div class="content">
+        <div>
+            <h1>Harmonique et transformer de Fourrier</h1>
+            <div>
+                <h2>Qu’est ce qu’une harmonique ?</h2>
+                <math>
+                    <mi>s</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>=</mo><mi>A</mi><mo>sin</mo>
+                    <mrow>
+                        <mo>&#x0028;</mo><mn>2</mn><mi>&#x03C0;</mi><mi>f</mi><mi>&#8320;</mi><mi>t</mi><mo>+</mo><mi>&phi;</mi><mo>&#x0029;</mo>
+                    </mrow>
+                </math>
+                <ul>
+                    <li><math><mi>A</mi></math> représente l'amplitude</li>
+                    <li><math><mi>f</mi><mi>&#8320;</mi></math> représente la fréquence</li>
+                    <li><math><mi>&phi;</mi></math> représente la phase</li>
+                </ul>  
+                <p>Une harmonique est un signal sinusoïdal avec une fréquence multiple
+                    de la fréquence initiale         
+                    <math>
+                        <mi>f</mi><mo>=</mo><mi>n</mi><mo>&times;</mo><mi>f</mi><mi>&#8320;</mi>
+                    </math>
+                </p>
+            </div>
+            <div>
+                <h2>Représentation graphique des signaux</h2>
+                <p>La représentation la plus naturelle d'un signal est de faire une représentation de l'harmonique en fonction du temps.</p>
+                <div>
+                    <canvas id = "graphique" height="300" width="300"></canvas>
+                    <div id="caption"></div>
+                    <table>
+                        <tr>
+                            <td>L'Amplitude</td>
+                            <td><math><mi>A</mi></math></td>
+                            <td>=</td>
+                            <td><input type="number" value="1" placeholder="1" onkeyup=LoadGraph()></td>
+                        </tr>
+                        <tr>
+                            <td>La Fréquence</td>
+                            <td><math><mi>f</mi><mi>&#8320;</mi></math></td>
+                            <td>=</td>
+                            <td><input type="number" value="1" placeholder="1" onkeyup=LoadGraph()></td>
+                        </tr>
+                        <tr>
+                            <td>La Phase</td>
+                            <td><math><mi>&phi;</mi></math></td>
+                            <td>=</td>
+                            <td><input type="number" value="0" placeholder="0" onkeyup=LoadGraph()></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <iframe src="footer.html" scrolling="no" style="border:0;" width="100%"></iframe>
+    <script src="script/script.js"></script>
+    <script src="script/graphique.js"></script>
+</body>
+</html>

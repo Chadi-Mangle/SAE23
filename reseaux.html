@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <iframe id="navbar" src="navbar.html" scrolling="no" style="border:0;" width="100%"></iframe>
+    <div id="navdiv"></div>
+
+    <div id="sidebar"></div>
+
+    <div class="content">
+        <div>
+            <h1>Routage et adresse IP</h1>
+            <div>
+                <h2>Qu'est ce qu'une adresse IP ?</h2>
+                <p> Une adresse IP est composée de 32 bits. On a donc (à peu près) 2^32 = 4 294 967 296 d’adresses IP disponibles. <br>
+                    À peu peu près car certaines adresses sont n´ecessaires au fonctionnement du protocole et ne peuvent pas être attribuées à des machines. On dit qu’elles sont réservées. <br>
+                    Donc en réalité on a donc un peu moins de 2^32 adresses IP disponibles. On la note sous la forme de 4 octets (en notation décimale) séparés par des points. <br>  
+                    On sait que 1 octet = 8 bits donc on retrouve bien 4 × 8 = 32 bits. <br>
+                    Les nombres qui composent une adresse IP sont dans l'intervalle [0, 255].
+                    </p>
+                    <p>Exemple d’adresse IP : 10.20.30.40 <br>
+                    La représentation binaire est : 00001010.00010100.00011110.00101000</p>
+                    <p>Vous pouvez retouvez en dessous des convertiseurs     binaire/decimale.</p>
+            </div>
+            <div>
+                <h2>Conversion décimale en binaire</h2>
+                <span>Donnez un nombre décimale : </span><input type="number" id="d_to_b" placeholder="Entrez un nombre décimale">
+                <table class="realTable">
+                    <thead>
+                        <tr>
+                            <th>Décimale</th>
+                            <th>Binaire</th>
+                        </tr>
+                    </thead>
+                    <tbody id='tbody1'></tbody>
+                </table>
+            </div>
+            <div>
+                <h2>Conversion binaire en décimale</h2>
+                <span>Donnez un nombre binaire : </span><input type="number" id="b_to_d" placeholder="Entrez un nombre binaire">
+                <table class="realTable">
+                    <thead>
+                        <tr>
+                            <th>Décimale</th>
+                            <th>Binaire</th>
+                        </tr>
+                    </thead>
+                    <tbody id='tbody2'></tbody>
+                </table>
+            </div>
+            <div>
+                <h2>Conversion IP décimale en binaire</h2>
+                <span>Donnez une IP en décimale : </span><input type="text" id="ip_d_to_b" placeholder="Entrez une IP décimale">
+                <table class="realTable">
+                    <thead>
+                        <tr>
+                            <th>Décimale</th>
+                            <th>Binaire</th>
+                        </tr>
+                    </thead>
+                    <tbody id='tbody3'></tbody>
+                </table>
+            </div>
+            <div>
+                <h2>Conversion IP binaire en décimale</h2>
+                <span>Donnez une IP en binaire : </span><input type="text" id="ip_b_to_d" placeholder="Entrez une IP binaire">
+                <table class="realTable">
+                    <thead>
+                        <tr>
+                            <th>Décimale</th>
+                            <th>Binaire</th>
+                        </tr>
+                    </thead>
+                    <tbody id='tbody4'></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <iframe src="footer.html" scrolling="no" style="border:0;" width="100%"></iframe>
+    <script src="script/script.js"></script>
+    <script src="script/reseaux.js"></script>
+</body>
+</html>

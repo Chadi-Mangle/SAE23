@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <iframe id="navbar" src="navbar.html" scrolling="no" style="border:0;" width="100%"></iframe>
+    <div id="navdiv"></div>
+
+    <div class="content">
+        <div>
+            <h1>Jeu du Pendu</h1>
+            <div>
+                <p id="word-display" style="letter-spacing: 5px;"></p>
+                <p id="message"></p>
+                <input type="text" placeholder="Entrez une lettre">
+                <button id="new-word" onclick="new_word()">Nouveau Mot</button>
+                <div>
+                    <img>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe src="footer.html" scrolling="no" style="border:0;" width="100%"></iframe>
+    <script src="script/script.js"></script>
+    <script src="script/jeu.js"></script>
+</body>
+</html>

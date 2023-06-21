@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+
+:root {
+  --widthlat: 40px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Alexandria', sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.content div:nth-child(1) {
+  margin: 20px;
+  margin-left: calc(var(--widthlat) + 28px);
+}
+
+.content div {
+  margin: 20px;
+}
+
+.content {
+  counter-reset: h2;
+}
+
+h2::before {
+  content: counter(h2)". ";
+  counter-increment: h2;
+}
+
+#navbar {
+  top: 0;
+  position: fixed;
+  z-index: 20;
+}
+
+#sidebar {
+  width: var(--widthlat);
+  position: fixed;
+  z-index: 1;
+  top: 45px;
+  left: 10px;
+  text-align: center;
+  background: black;
+  overflow-x: hidden;
+  padding: 8px 0;
+  border-radius: 2px 10px 10px 2px;
+}
+
+#sidebar a {
+  color: white;
+  padding: 6px 8px;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+iframe[src*="footer.html"] {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+h2 {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+p {
+  margin-bottom: 10px;
+}
+
+.realTable {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.realTable th,
+.realTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.realTable th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+input[type="number"],
+input[type="text"] {
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.cacher {
+  display: none;
+}
+
+.faux-input {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 0px;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+}
+
+.term {
+  background: #000;
+  width: 640px;
+  /*  height: 480px; */
+  color: #aaa;
+  font-family: Monaco, monospace;
+  font-weight: 400;
+  font-smooth: never;
+  -webkit-font-smoothing : none;
+  font-size: 10.5pt;
+  padding: 15px;
+  border-radius: 20px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  display: block;
+  line-height: 1.2em;
+  overflow-y: scroll;
+  position: relative;
+  color: #888;
+  margin-left: 20px;
+  /* display: none; */
+}
+
+.term.cacher{
+  display: none;
+}
+
+.term-focus {
+  text-shadow: none;
+  color: #ccc;
+}
+
+.term .red {
+  color: red;
+}
+.term .blue {
+  color: blue;
+}
+.term .white {
+  color: #fff;
+}
+.term .bold {
+  font-weight: bold;
+}
+
+.bell {
+  width: 0.1em;
+  height: 1.1em;
+  line-height: 1.2em;
+  background: #fff;
+  position: absolute;
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0% {
+    visibility: visible;
+  }
+  49% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 0;
+}
+ 
+::-webkit-scrollbar {
+  width: 0;
+}
+ 
+.content {
+  max-width: calc(100vw - 6*var(--widthlat));
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.content h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.content ol {
+  margin-left: 1.5em;
+}
+
+.content ol li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.content ol li a:hover {
+  text-decoration: underline;
+}
+
+.content img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+embed{
+  overflow: hidden;
+}
+
+
+button {
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+}
+button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+

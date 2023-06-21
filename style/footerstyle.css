@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}  
+
+body{
+    font-family: 'Alexandria', sans-serif; 
+}
+
+footer img{
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: underline;
+}
+
+img{
+    filter: brightness(0) invert(1);
+}

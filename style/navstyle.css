@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}   
+
+html{
+    background-color: black;
+}
+
+nav{
+    width: 100%;
+}
+
+a{
+    color: white;
+}
+
+ul{
+    padding: 10px 0;
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    /* gap: 30px; */
+}
+
+li{
+    height: 100%;
+    /* width: 100%; */
+}
+
+a{
+    padding: 11px;
+}
+
+.active{
+    font-weight: bold;
+    color: black;
+    background-color: white;
+}
+
+a:hover{
+    background-color: grey;
+}
+
+.active:hover{
+    background-color: white;
+}
