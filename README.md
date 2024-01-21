@@ -1,2 +1,2 @@
-# SAE23
-Site : https://chadi-mangle.github.io/SAE23/
+# courses_website
+Site : https://chadi-mangle.github.io/courses_website/
